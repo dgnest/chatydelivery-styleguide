@@ -14,14 +14,11 @@ $color-btn-primary-hover: $color-blue + $color-diff;
 $color-btn-error: $color-red;
 $color-btn-error-hover: $color-red + $color-diff;
 
-$color-btn-warning: $color-orange;
-$color-btn-warning-hover: $color-orange + $color-diff;
+$color-btn-warning: $color-yellow;
+$color-btn-warning-hover: $color-yellow + $color-diff;
 
 $color-btn-brand: $color-brand;
 $color-btn-brand-hover: $color-brand + $color-diff;
-
-$color-btn-devolution: $color-devolution;
-$color-btn-devolution-hover: $color-devolution + $color-diff;
 
 
 .btn {
@@ -49,9 +46,9 @@ a.btn:hover {
   text-decoration: none;
 }
 
-$btn-array: "success", "warning", "error", "primary", "brand", "devolution";
-$btn-color-array: $color-btn-success, $color-btn-warning, $color-btn-error, $color-btn-primary, $color-btn-brand, $color-btn-devolution;
-$btn-color-hover-array: $color-btn-success-hover, $color-btn-warning-hover, $color-btn-error-hover, $color-btn-primary-hover, $color-btn-brand-hover, $color-btn-devolution-hover;
+$btn-array: "success", "warning", "error", "primary", "brand";
+$btn-color-array: $color-btn-success, $color-btn-warning, $color-btn-error, $color-btn-primary, $color-btn-brand;
+$btn-color-hover-array: $color-btn-success-hover, $color-btn-warning-hover, $color-btn-error-hover, $color-btn-primary-hover, $color-btn-brand-hover;
 
 @for $i from 1 through length($btn-array) {
   .btn-#{nth($btn-array, $i)} {
