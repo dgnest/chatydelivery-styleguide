@@ -30,7 +30,9 @@
         }
     },
     "assets": {
-        "css": [],
+        "css": [
+            "assets/css/index.css"
+        ],
         "js": []
     },
     "font_libraries": {
@@ -39,7 +41,7 @@
         "google_web_fonts": null
     },
     "content": {
-        "show_first_page_on_load": true,
+        "show_first_page_on_load": false,
         "title": "Overview",
         "pages": [
             {
@@ -58,6 +60,27 @@
                     "group": "buttons",
                     "name": "default",
                     "title": "Defaults"
+                },
+                {
+                    "group": "buttons",
+                    "name": "outline",
+                    "title": "Outline"
+                }
+            ]
+        },
+        {
+            "name": "forms",
+            "title": "Forms",
+            "components": [
+                {
+                    "group": "forms",
+                    "name": "basic",
+                    "title": "Basic Form"
+                },
+                {
+                    "group": "forms",
+                    "name": "validation-states",
+                    "title": "Validation states"
                 }
             ]
         }
