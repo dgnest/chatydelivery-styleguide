@@ -1,0 +1,12 @@
+$social-networks: 'facebook' 'twitter' 'google-plus' 'youtube' 'whatsapp' 'instagram';
+$social-networks-colors: $color-facebook $color-twitter $color-google-plus $color-youtube $color-whatsapp $color-instagram;
+
+@for $i from 1 through length($social-networks) {
+  .dg-#{nth($social-networks, $i)} {
+    color: nth($social-networks-colors, $i);
+
+    &:hover {
+      color: nth($social-networks-colors, $i) + 10;
+    }
+  }
+}

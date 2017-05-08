@@ -1,0 +1,127 @@
+// $FORMS
+.form-group {
+  margin-bottom: $dimen-padding-view-m;
+  position: relative;
+
+  &.checkbox {
+    input {
+      margin-right: $dimen-padding-view-xs;
+    }
+  }
+
+  label,
+  .label {
+    margin-bottom: 5px;
+  }
+
+  &.has-error {
+    label,
+    .label,
+    .help-block {
+      color: $color-error;
+    }
+
+    .form-control {
+      border-color: $color-error;
+    }
+
+    .help-block__error {
+      display: block;
+    }
+  }
+
+  .help-block {
+    margin-top: $dimen-padding-view-xs;
+    font-size: $dimen-text-sub;
+  }
+
+  .help-block__error {
+    display: none;
+  }
+
+  &.form-group__required {
+    label,
+    .label,
+    span.required {
+      font-weight: 700;
+    }
+  }
+
+  span.required {
+    color: $color-red;
+    padding-left: 2px;
+    // font-size: 18px;
+    vertical-align: middle;
+  }
+}
+
+.form-horizontal {
+  display: table;
+
+  .form-group {
+    display: inline-block;
+    padding-right: $dimen-padding-view-s;
+
+
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+}
+
+label,
+.label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.icon-help {
+  position: relative;
+  padding: 2px 4px;
+  margin-left: 4px;
+  border-radius: 2px;
+  background-color: rgba($color-tooltip, 0.15);
+  color: rgba($color-tooltip, 0.6);
+  cursor: help;
+  float: right;
+
+  &.no-float {
+    float: none;
+    margin-left: 0px;
+  }
+
+  &:hover {
+    color: $color-tooltip;
+  }
+}
+
+.form-group .icon-help {
+  margin-bottom: 4px;
+}
+
+.form__text {
+  .form-group__text:last-child {
+    border: none;
+    margin-bottom: 0px;
+  }
+}
+
+.form-group__text {
+  border-bottom: solid 1px $color-gray-light;
+  margin-bottom: $dimen-padding-view-s;
+  padding-bottom: $dimen-padding-view-s;
+
+  label,
+  .label {
+    color: #707070;
+    cursor: default;
+  }
+
+  .value {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    margin-left: $dimen-padding-view-m;
+    font-size: 16px;
+  }
+}

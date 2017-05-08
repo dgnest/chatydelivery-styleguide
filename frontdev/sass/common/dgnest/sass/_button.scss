@@ -1,0 +1,41 @@
+.btn-group {
+  button,
+  .btn {
+    margin-bottom: $dimen-padding-view-xs;
+    margin-right: $dimen-padding-view-xs;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.btn-group__closed {
+  @include clearfix;
+
+  .btn {
+    float: left;
+    border-radius: 0px;
+    border-left-width: 0px;
+
+    &:first-child {
+      border-top-left-radius: $dimen-btn-border-radius;
+      border-bottom-left-radius: $dimen-btn-border-radius;
+      border-left-width: 1px;
+    }
+
+    &:last-child {
+      border-top-right-radius: $dimen-btn-border-radius;
+      border-bottom-right-radius: $dimen-btn-border-radius;
+    }
+  }
+
+  .btn-px1 {
+    padding-left: $dimen-padding-view-xs;
+    padding-right: $dimen-padding-view-xs;
+
+    i {
+      padding: 0px;
+    }
+  }
+}

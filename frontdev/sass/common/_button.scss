@@ -1,0 +1,193 @@
+$dimen-btn-border-radius: 2px;
+
+// HOVER DEFAULT DIFERENCE VALUE
+$color-diff: -10;
+
+$color-btn-default-hover: #ebebeb;
+
+$color-btn-success: $color-green;
+$color-btn-success-hover: $color-green + $color-diff;
+
+$color-btn-primary: $color-blue;
+$color-btn-primary-hover: $color-blue + $color-diff;
+
+$color-btn-error: $color-red;
+$color-btn-error-hover: $color-red + $color-diff;
+
+$color-btn-warning: $color-orange;
+$color-btn-warning-hover: $color-orange + $color-diff;
+
+$color-btn-brand: $color-brand;
+$color-btn-brand-hover: $color-brand + $color-diff;
+
+$color-btn-devolution: $color-devolution;
+$color-btn-devolution-hover: $color-devolution + $color-diff;
+
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: $dimen-btn-border-radius;
+  @include font('roboto-condensed');
+  font-size: $dimen-text-normal;
+  color: $color-white;
+  padding: $dimen-padding-view-xs $dimen-padding-view-s;
+  cursor: pointer;
+  @include transition-property(box-shadow, transform, background, color, border);
+  @include transition-duration(0.3s);
+
+  i {
+    padding-right: $dimen-padding-view-xs;
+  }
+
+  &.btn-i i {
+    padding-right: 0px;
+  }
+}
+
+a.btn,
+a.btn:hover {
+  text-decoration: none;
+}
+
+$btn-array: "success", "warning", "error", "primary", "brand", "devolution";
+$btn-color-array: $color-btn-success, $color-btn-warning, $color-btn-error, $color-btn-primary, $color-btn-brand, $color-btn-devolution;
+$btn-color-hover-array: $color-btn-success-hover, $color-btn-warning-hover, $color-btn-error-hover, $color-btn-primary-hover, $color-btn-brand-hover, $color-btn-devolution-hover;
+
+@for $i from 1 through length($btn-array) {
+  .btn-#{nth($btn-array, $i)} {
+
+    background-color: nth($btn-color-array, $i);
+
+    &:hover:not([disabled]),
+    &:active:not([disabled]),
+    &:focus:not([disabled]) {
+      background-color: nth($btn-color-hover-array, $i);
+      border-color: transparent;
+      @include box-shadow(none);
+      color: $color-white;
+      outline: none;
+      @include elevation(1);
+    }
+
+    &:active {
+      @include elevation(3);
+    }
+
+    &:active:hover {
+      border-color: transparent;
+    }
+
+    &:focus{
+      background-color: nth($btn-color-array, $i);
+    }
+
+    &[disabled] {
+      opacity: 0.4;
+      cursor: auto;
+    }
+
+    &.btn-outline {
+      background-color: $color-white;
+      border-color: nth($btn-color-array, $i);
+      color: nth($btn-color-array, $i);
+
+      &:hover:not([disabled]),
+      &:active:not([disabled]),
+      &:focus:not([disabled]) {
+        background-color: nth($btn-color-array, $i);
+        color: $color-white;
+      }
+    }
+  }
+
+  .btn-big.btn-#{nth($btn-array, $i)} {
+    @include box-shadow( nth($btn-color-hover-array, $i) 0px 5px 0px);
+
+    &:hover {
+      @include box-shadow( nth($btn-color-hover-array, $i) 0px 3px 0px);
+      background-color: nth($btn-color-array, $i);
+      @include transform(translateY(2px));
+    }
+
+    &:active {
+      @include box-shadow( rgba(0,0,0,0.4) 0px 2px 10px);
+      @include transform(translateY(5px));
+    }
+  }
+}
+
+.btn-big {
+  @include transform(translateY(0px));
+}
+
+.btn-invisible {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btn-ghost {
+  border-color: $color-blue;
+  background-color: transparent;
+  color: $color-blue;
+
+  &:hover {
+    background-color: #F3F3F3;
+  }
+}
+
+%btn-small {
+  padding: 4px $dimen-padding-view-xs;
+}
+
+%btn-ghost-gray {
+  background-color: $color-white;
+  border-color: $color-gray;
+  color: $color-gray-dark;
+}
+
+.btn-trash {
+  @extend %btn-small;
+  @extend %btn-ghost-gray;
+
+  &:hover {
+    background-color: $color-red;
+    border-color: $color-red;
+    color: $color-white;
+  }
+}
+
+.btn-ghost__success {
+  @extend %btn-small;
+  @extend %btn-ghost-gray;
+
+  &:hover {
+    background-color: $color-green;
+    border-color: $color-green;
+    color: $color-white;
+  }
+}
+
+.btn-ghost__primary {
+  @extend %btn-small;
+  @extend %btn-ghost-gray;
+
+  &:hover {
+    background-color: $color-blue;
+    border-color: $color-blue;
+    color: $color-white;
+  }
+}
+
+// .btn.close {
+//   position: absolute;
+//   top: 0px;
+//   right: 0px;
+//   color: $color-blue;
+//   padding: 0px;
+//   font-size: $dimen-text-normal-big;
+// }
+
+.btn-small {
+  @extend %btn-small;
+}

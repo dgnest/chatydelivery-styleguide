@@ -1,0 +1,49 @@
+span, i, strong, h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+a {
+  color: $color-blue;
+  text-decoration: none;
+  @include transition-property(color);
+  @include transition-duration(0.2s);
+
+  .underlined:hover {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    color: $color-blue - 30;
+  }
+}
+
+b, strong, .strong {
+  @include font('roboto-condensed-bold');
+  font-weight: 300;
+}
+
+.text-accent {
+  color: $color-text-accent;
+}
+
+.success {
+  color: $color-success;
+}
+
+.error {
+  color: $color-error;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-right {
+  text-align: right;
+}

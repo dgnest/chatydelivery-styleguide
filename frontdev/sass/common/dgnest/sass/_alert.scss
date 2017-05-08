@@ -1,0 +1,15 @@
+.alert {
+  border-radius: 2px;
+  padding: $dimen-padding-view-m;
+  margin-bottom: $dimen-padding-view-s;
+}
+
+$alerts: "info", "success", "warning", "danger";
+$color-alert: $color-blue, $color-green, $color-yellow, $color-red;
+
+@for $i from 1 through length($alerts) {
+  .alert-#{nth($alerts, $i)} {
+    background-color: rgba( nth($color-alert, $i), 0.3 );
+    color: nth($color-alert, $i) - 30;
+  }
+}

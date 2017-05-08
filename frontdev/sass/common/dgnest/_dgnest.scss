@@ -1,0 +1,93 @@
+* {
+  @include font('roboto-condensed');
+  font-size: $dimen-text-normal;
+  box-sizing: border-box;
+  color: $color-text;
+}
+
+body {
+  background-color: $color-bg;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.dg-content {
+  padding: $dimen-padding-view-m;
+  @include clearfix();
+}
+
+.card {
+  @include card();
+}
+
+.inline-table {
+  display: inline-table;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.block {
+  display: block;
+}
+
+.relative {
+  position: relative;
+}
+
+.circle {
+  @include border-radius(50%)
+}
+
+.hr {
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-color: #ddd;
+  border-bottom-width: 1px;
+  margin-bottom: $dimen-padding-view-m;
+}
+
+.status-tag {
+  color: $color-white;
+  display: inline-block;
+  border-radius: 999999px;
+  padding: 4px $dimen-padding-view-s;
+
+  &.active {
+    background-color: $color-green;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.padding-left {
+  padding-left: $dimen-padding-view-s;
+}
+
+.padding-right {
+  padding-right: $dimen-padding-view-s;
+}
+
+@import "./sass/text";
+@import "./sass/alert";
+@import "./sass/columns";
+@import "./sass/form";
+@import "./sass/input";
+@import "./sass/list";
+@import "./sass/table";
+@import "./sass/tooltip";
+@import "./sass/dropdown";
+@import "./sass/button";
+@import "./sass/vendor";
+@import "./sass/spacing";
+@import "./sass/modal";
+@import "./sass/spaces";

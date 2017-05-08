@@ -1,0 +1,110 @@
+// $INPUTS
+$color-input: #434a54;
+
+.form-control {
+  @include form-control();
+}
+
+.form-control__small {
+  width: 64px;
+}
+
+.form-control__medium {
+  width: 100px;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.form-search {
+  position: relative;
+
+  input {
+    padding-left: $dimen-padding-view-l;
+  }
+
+  i {
+    position: absolute;
+    top: 8px;
+    left: $dimen-padding-view-xs;
+    color: rgba($color-input, 0.6);
+  }
+}
+
+.form-group__input-i {
+  position: relative;
+
+  input {
+    padding-left: $dimen-padding-view-l;
+  }
+
+  i {
+    position: absolute;
+    top: 8px;
+    left: $dimen-padding-view-xs;
+    color: rgba($color-input, 0.6);
+  }
+}
+
+.form-control[disabled],
+.form-control[readonly] {
+  cursor: not-allowed;
+  opacity: 1;
+  background-color: #e6e9ed;
+  border-color: #e6e9ed;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+
+
+.input-group {
+  display: table;
+
+  .form-control,
+  .input-group-btn {
+    display: table-cell;
+    position: relative;
+  }
+
+  & > .form-control:first-child,
+  .input-group-btn:first-child > .btn,
+  .input-group-btn:first-child > .btn-group > .btn,
+  .input-group-btn:last-child > .btn-group:not(:last-child) >.btn,
+  .input-group-btn:last-child >.btn:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .form-control:last-child,
+  .form-group:last-child .form-control,
+  .input-group-btn:first-child>.btn-group:not(:first-child)>.btn,
+  .input-group-btn:first-child>.btn:not(:first-child),
+  .input-group-btn:last-child>.btn,
+  .input-group-btn:last-child>.btn-group>.btn,
+  .input-group-btn:last-child>.dropdown-toggle {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .input-group-btn:first-child > .btn,
+  .input-group-btn:first-child > .btn-group {
+    margin-right: -1px;
+  }
+
+  .btn {
+    background-color: #fff;
+    color: $color-input;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #aab2bd;
+    border-radius: 3px;
+    margin-left: -1px;
+
+    @include transition-property(border);
+    @include transition-duration(0.3s);
+  }
+}

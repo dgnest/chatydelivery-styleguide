@@ -1,0 +1,64 @@
+// $COLORS
+$color-black: #000000;
+$color-blue-light: #5D9CEC;
+$color-blue: #4A89DC;
+$color-brown: #9D3D1C;
+$color-dark: #393F4C;
+$color-gray-dark: #778B99;
+$color-gray-light-2: #E6E9ED;
+$color-gray-light: #F4F4F4;
+$color-gray: #CED1CC;
+$color-green-dark: #007A87;
+$color-green: #24CF5F;
+$color-orange: #FF7E27;
+$color-purple-dark: #7B0051;
+$color-purple: #D770AD;
+$color-red-dark: #B23F42;
+$color-red: #FF5A5F;
+$color-white: #FFFFFF;
+$color-yellow: #FFB400;
+
+$color-brand-brown: #9D3D1C;
+$color-brand: #FF7138;
+
+
+// $TEXT
+$color-text: $color-dark;
+$color-text-accent: $color-gray-dark;
+$color-text-link: $color-blue;
+$color-success: $color-green;
+$color-error: $color-red;
+
+// $VIEW
+$color-bg: $color-gray-light;
+$color-devolution: $color-purple;
+$color-payment: $color-green;
+$color-tooltip: $color-blue;
+
+// $CARD
+$color-card-bg: $color-white;
+$color-hr: $color-gray-dark;
+
+// $HEADER
+$color-header-bg: $color-white;
+$color-social-network: #B3B3B3;
+
+$color-facebook: #3B5998;
+$color-twitter: #55ACEE;
+$color-google-plus: #E0503F;
+$color-youtube: #BB2C2A;
+$color-whatsapp: #1DA110;
+$color-instagram: #121212;
+
+// $TABLE
+$color-table-tr-hover: rgba($color-blue,0.1);
+
+// $INPUT
+$color-input-border: #aab2bd;
+$color-input-border-focus: #3bafda;
+$color-input-placeholder: #e6e9ed;
+
+// $SIDEBAR
+$color-sidebar-bg: #e6e6e6;
+$color-sidebar-li-bg-hover: $color-sidebar-bg - 10;
+$color-sidebar-li-bg-active: #808080;

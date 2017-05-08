@@ -1,0 +1,13 @@
+@import "compass/css3";
+
+@include font-face("roboto-condensed", font-files("RobotoCondensed-Regular.woff", "RobotoCondensed-Regular.ttf"));
+@include font-face("roboto-condensed-light", font-files("RobotoCondensed-Light.woff", "RobotoCondensed-Light.ttf"));
+@include font-face("roboto-condensed-bold", font-files("RobotoCondensed-Bold.woff", "RobotoCondensed-Bold.ttf"));
+@include font-face("roboto-normal", font-files("Roboto-Regular.woff", "Roboto-Regular.ttf"));
+@include font-face("roboto-light", font-files("Roboto-Light.woff", "Roboto-Light.ttf"));
+@include font-face("roboto-bold", font-files("Roboto-Bold.woff", "Roboto-Bold.ttf"));
+@include font-face("roboto-thin", font-files("Roboto-Thin.woff", "Roboto-Thin.ttf"));
+
+@mixin font($font-name: "robotoCondensed") {
+  font-family: $font-name, "sans-serif";
+}

@@ -1,0 +1,73 @@
+// m -> margin
+// mt -> margin-top
+// mr -> margin-right
+// mb -> margin-bottom
+// ml -> margin-left
+// mx -> margin in x
+// my -> margin in y
+
+.m0  { margin: 0 }
+.mt0 { margin-top: 0 }
+.mr0 { margin-right: 0 }
+.mb0 { margin-bottom: 0 }
+.ml0 { margin-left: 0 }
+.mx0 { margin-left: 0; margin-right: 0 }
+.my0 { margin-top: 0; margin-bottom: 0 }
+
+.mxs { margin: $dimen-padding-view-xs }
+.mtxs { margin-top: $dimen-padding-view-xs }
+.mrxs { margin-right: $dimen-padding-view-xs }
+.mbxs { margin-bottom: $dimen-padding-view-xs }
+.mlxs { margin-left: $dimen-padding-view-xs }
+.mxxs { margin-left: $dimen-padding-view-xs; margin-right: $dimen-padding-view-xs }
+.myxs { margin-top: $dimen-padding-view-xs; margin-bottom: $dimen-padding-view-xs }
+
+.ms { margin: $dimen-padding-view-s }
+.mts { margin-top: $dimen-padding-view-s }
+.mrs { margin-right: $dimen-padding-view-s }
+.mbs { margin-bottom: $dimen-padding-view-s }
+.mls { margin-left: $dimen-padding-view-s }
+.mxs { margin-left: $dimen-padding-view-s; margin-right: $dimen-padding-view-s }
+.mys { margin-top: $dimen-padding-view-s; margin-bottom: $dimen-padding-view-s }
+
+.mm { margin: $dimen-padding-view-m }
+.mtm { margin-top: $dimen-padding-view-m }
+.mrm { margin-right: $dimen-padding-view-m }
+.mbm { margin-bottom: $dimen-padding-view-m }
+.mlm { margin-left: $dimen-padding-view-m }
+.mxm { margin-left: $dimen-padding-view-m; margin-right: $dimen-padding-view-m }
+.mym { margin-top: $dimen-padding-view-m; margin-bottom: $dimen-padding-view-m }
+
+
+// $PADDING
+.p0  { padding: 0 }
+.pt0 { padding-top: 0 }
+.pr0 { padding-right: 0 }
+.pb0 { padding-bottom: 0 }
+.pl0 { padding-left: 0 }
+.px0 { padding-left: 0; padding-right: 0 }
+.py0 { padding-top: 0; padding-bottom: 0 }
+
+.pxs { padding: $dimen-padding-view-xs }
+.ptxs { padding-top: $dimen-padding-view-xs }
+.prxs { padding-right: $dimen-padding-view-xs }
+.pbxs { padding-bottom: $dimen-padding-view-xs }
+.plxs { padding-left: $dimen-padding-view-xs }
+.pxxs { padding-left: $dimen-padding-view-xs; padding-right: $dimen-padding-view-xs }
+.pyxs { padding-top: $dimen-padding-view-xs; padding-bottom: $dimen-padding-view-xs }
+
+.ps { padding: $dimen-padding-view-s }
+.pts { padding-top: $dimen-padding-view-s }
+.prs { padding-right: $dimen-padding-view-s }
+.pbs { padding-bottom: $dimen-padding-view-s }
+.pls { padding-left: $dimen-padding-view-s }
+.pxs { padding-left: $dimen-padding-view-s; padding-right: $dimen-padding-view-s }
+.pys { padding-top: $dimen-padding-view-s; padding-bottom: $dimen-padding-view-s }
+
+.pm { padding: $dimen-padding-view-m }
+.ptm { padding-top: $dimen-padding-view-m }
+.prm { padding-right: $dimen-padding-view-m }
+.pbm { padding-bottom: $dimen-padding-view-m }
+.plm { padding-left: $dimen-padding-view-m }
+.pxm { padding-left: $dimen-padding-view-m; padding-right: $dimen-padding-view-m }
+.pym { padding-top: $dimen-padding-view-m; padding-bottom: $dimen-padding-view-m }
